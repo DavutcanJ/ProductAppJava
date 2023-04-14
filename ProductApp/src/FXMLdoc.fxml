@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="460.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLController">
+   <children>
+      <TableView fx:id="data_table" layoutX="36.0" layoutY="65.0" prefHeight="326.0" prefWidth="440.0">
+        <columns>
+          <TableColumn fx:id="data_id" editable="false" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="data_name" editable="false" prefWidth="118.60001373291016" text="NAME" />
+            <TableColumn fx:id="data_exp" editable="false" prefWidth="121.5999755859375" text="EXPİRATİON" />
+            <TableColumn fx:id="data_stock" editable="false" minWidth="0.0" prefWidth="101.60003662109375" text="STOCK" />
+        </columns>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </TableView>
+      <TextField fx:id="tid" layoutX="560.0" layoutY="147.0" />
+      <TextField fx:id="tname" layoutX="560.0" layoutY="187.0" />
+      <TextField fx:id="texpdate" layoutX="560.0" layoutY="236.0" />
+      <TextField fx:id="tstock" layoutX="560.0" layoutY="282.0" />
+      <Label fx:id="toplabel" layoutX="38.0" layoutY="6.0" prefHeight="55.0" prefWidth="760.0" text="Firma">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="520.0" layoutY="151.0" text="ID" />
+      <Label layoutX="506.0" layoutY="191.0" text="NAME" />
+      <Label layoutX="497.0" layoutY="240.0" text="EXP DATE" />
+      <Label layoutX="505.0" layoutY="286.0" text="STOCK" />
+      <Button layoutX="507.0" layoutY="365.0" mnemonicParsing="false" onAction="#onaddbutton" text="Add" />
+      <Button layoutX="710.0" layoutY="365.0" mnemonicParsing="false" onAction="#ondeletebutton" text="Delete" />
+      <Button layoutX="606.0" layoutY="365.0" mnemonicParsing="false" onAction="#onChangeButtonClick" text="Change" />
+      <Label fx:id="kontrolabel" layoutX="537.0" layoutY="107.0" prefHeight="26.0" prefWidth="254.0" />
+      <TextField fx:id="tsearch" layoutX="559.0" layoutY="65.0" />
+      <Button layoutX="727.0" layoutY="65.0" mnemonicParsing="false" onAction="#onSearchButtonClick" text="Search" />
+      <Label layoutX="500.0" layoutY="69.0" text="Search Id" />
+   </children>
+</AnchorPane>

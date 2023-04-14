@@ -1,0 +1,5 @@
+2 KahveMakinası 11/04/2026 2
+3 Kitaplık 15/06/2030 5
+5 Bilgisayar 31/12/2040 18
+7 mause 22/11/2021 4
+4 Masa 22/10/2060 3
